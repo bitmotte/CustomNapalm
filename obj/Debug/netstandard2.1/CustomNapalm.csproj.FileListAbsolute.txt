@@ -1,0 +1,15 @@
+/home/sillius-goober/Projects/Coding/CustomNapalm/bin/Debug/netstandard2.1/CustomNapalm.deps.json
+/home/sillius-goober/Projects/Coding/CustomNapalm/bin/Debug/netstandard2.1/CustomNapalm.dll
+/home/sillius-goober/Projects/Coding/CustomNapalm/bin/Debug/netstandard2.1/CustomNapalm.pdb
+/home/sillius-goober/Projects/Coding/CustomNapalm/bin/Debug/netstandard2.1/Assembly-CSharp.dll
+/home/sillius-goober/Projects/Coding/CustomNapalm/bin/Debug/netstandard2.1/Unity.Addressables.dll
+/home/sillius-goober/Projects/Coding/CustomNapalm/bin/Debug/netstandard2.1/Unity.ResourceManager.dll
+/home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNapalm.csproj.AssemblyReference.cache
+/home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/MyPluginInfo.cs
+/home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNapalm.GeneratedMSBuildEditorConfig.editorconfig
+/home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNapalm.AssemblyInfoInputs.cache
+/home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNapalm.AssemblyInfo.cs
+/home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNapalm.csproj.CoreCompileInputs.cache
+/home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNa.54D32F9A.Up2Date
+/home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNapalm.dll
+/home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNapalm.pdb
