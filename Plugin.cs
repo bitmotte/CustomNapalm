@@ -24,6 +24,11 @@ public class Plugin : BaseUnityPlugin
         Logger.LogInfo("loaded bouncy asset");
     }
 
+    private void OnSceneLoaded()
+    {
+        Debug.Log("hi");
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
@@ -42,5 +47,6 @@ public class Plugin : BaseUnityPlugin
         }
 
         Logger.LogInfo(GameObject.Find("Rocket Launcher Napalm(Clone)"));
+        //GunControl.currentWeapon
     }
 }
