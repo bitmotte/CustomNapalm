@@ -40,5 +40,7 @@ public class Plugin : BaseUnityPlugin
             outdoorsChecker = Instantiate(outdoorsChecker, newNapalm.transform);
             outdoorsChecker.AddComponent<OutdoorsChecker>();
         }
+
+        Logger.LogInfo(GameObject.Find("Rocket Launcher Napalm(Clone)"));
     }
 }
