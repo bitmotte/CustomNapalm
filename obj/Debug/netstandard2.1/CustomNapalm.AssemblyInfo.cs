@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CustomNapalm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e26be5246b7c6b94104a34b8a24b3aa4767d436")]
 [assembly: System.Reflection.AssemblyProductAttribute("Custom Napalm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CustomNapalm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

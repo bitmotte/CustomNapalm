@@ -21,17 +21,24 @@ public class Plugin : BaseUnityPlugin
         string prefabName = "Assets/bouncy.prefab";
 
         bouncyCube = AssetBundle.LoadFromFile($"{pluginfolder}\\{bundleName}").LoadAsset<GameObject>(prefabName);
-        Logger.LogInfo(bouncyCube);
-        Logger.LogInfo($"{pluginfolder}\\{bundleName}");
-        Logger.LogInfo("trying to load assetbundle");
+        Logger.LogInfo("loaded bouncy asset");
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
+            GameObject infoRef = GameObject.Find("GameController");
+            Logger.LogInfo(infoRef);
+
             GameObject newNapalm = Instantiate(bouncyCube);
-            newNapalm.transform.position = new Vector3(0, 20, 0);
+            newNapalm.transform.position = infoRef.GetComponent<PlayerTracker>().GetPlayer().position;
+            newNapalm.tag = "Floor";
+            newNapalm.layer = LayerMask.NameToLayer("Outdoors");
+
+            GameObject outdoorsChecker = new GameObject();
+            outdoorsChecker = Instantiate(outdoorsChecker, newNapalm.transform);
+            outdoorsChecker.AddComponent<OutdoorsChecker>();
         }
     }
 }
