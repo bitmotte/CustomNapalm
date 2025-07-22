@@ -13,3 +13,4 @@
 /home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNa.54D32F9A.Up2Date
 /home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNapalm.dll
 /home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNapalm.pdb
+/home/sillius-goober/Projects/Coding/CustomNapalm/obj/Debug/netstandard2.1/CustomNapalm.sourcelink.json
