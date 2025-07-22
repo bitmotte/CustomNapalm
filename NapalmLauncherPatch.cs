@@ -12,13 +12,14 @@ namespace CustomNapalm
 
         [HarmonyPatch(typeof(RocketLauncher), "ShootNapalm")]
         [HarmonyPrefix]
-        static bool ShootCustomNapalm(RocketLauncher __instance)
+        static bool ShootCustomNapalmPre(RocketLauncher __instance)
         {
             Plugin.Logger.LogInfo("napalm time :3");
 
             var napalmProjectileField = AccessTools.Field(typeof(RocketLauncher), "napalmProjectile");
-            Plugin.Logger.LogInfo(napalmProjectileField.GetValue(__instance));
-            napalmProjectileField.SetValue(__instance, null);
+            napalmProjectileField.SetValue(__instance, Plugin.objectSpawns.bouncyCube.GetComponent<Rigidbody>());
+            Rigidbody rb = (Rigidbody)napalmProjectileField.GetValue(__instance);
+            Plugin.objectSpawns.SetupBouncyCube(rb.gameObject);
 
             return true;
         }

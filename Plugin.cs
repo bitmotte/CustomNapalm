@@ -9,7 +9,7 @@ public class Plugin : BaseUnityPlugin
 {
     internal static new ManualLogSource Logger;
 
-    ObjectSpawns objectSpawns;
+    public static ObjectSpawns objectSpawns;
 
     private void Awake()
     {
@@ -22,15 +22,5 @@ public class Plugin : BaseUnityPlugin
 
         //patches
         NapalmLauncherPatch.Patch();
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            objectSpawns.SpawnBouncyCube();
-        }
-
-        //GameObject.Find("Rocket Launcher Napalm(Clone)");
     }
 }

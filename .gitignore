@@ -1,2 +1,4 @@
 /bin/
 /lib/
+obj/Debug/netstandard2.1/CustomNapalm.dll
+obj/Debug/netstandard2.1/CustomNapalm.pdb

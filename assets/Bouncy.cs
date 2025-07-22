@@ -8,11 +8,11 @@ public class Bouncy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-
+    
     void OnCollisionEnter(Collision collision)
     {
         Vector3 velocity = collision.relativeVelocity;
         Debug.Log(velocity);
-        rb.velocity = velocity;
+        rb.velocity = velocity / 1.6f;
     }
 }
