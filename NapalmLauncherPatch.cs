@@ -17,7 +17,9 @@ namespace CustomNapalm
             Plugin.Logger.LogInfo("napalm time :3");
 
             var napalmProjectileField = AccessTools.Field(typeof(RocketLauncher), "napalmProjectile");
-            napalmProjectileField.SetValue(__instance, Plugin.objectSpawns.bouncyCube.GetComponent<Rigidbody>());
+            GameObject tempBouncy = Object.Instantiate(Plugin.objectSpawns.bouncyCube);
+            napalmProjectileField.SetValue(__instance, tempBouncy.GetComponent<Rigidbody>());
+            Object.Destroy(tempBouncy);
             Rigidbody rb = (Rigidbody)napalmProjectileField.GetValue(__instance);
             Plugin.objectSpawns.SetupBouncyCube(rb.gameObject);
 
