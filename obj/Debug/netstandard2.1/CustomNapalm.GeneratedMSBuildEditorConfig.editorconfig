@@ -1,8 +1,5 @@
 is_global = true
 build_property.RootNamespace = CustomNapalm
-build_property.ProjectDir = /home/sillius-goober/Projects/Coding/CustomNapalm/
+build_property.ProjectDir = /home/silli/Projects/Coding/CustomNapalm/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 

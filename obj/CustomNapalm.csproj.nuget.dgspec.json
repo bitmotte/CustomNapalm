@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/home/sillius-goober/Projects/Coding/CustomNapalm/CustomNapalm.csproj": {}
+    "/home/silli/Projects/Coding/CustomNapalm/CustomNapalm.csproj": {}
   },
   "projects": {
-    "/home/sillius-goober/Projects/Coding/CustomNapalm/CustomNapalm.csproj": {
+    "/home/silli/Projects/Coding/CustomNapalm/CustomNapalm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/sillius-goober/Projects/Coding/CustomNapalm/CustomNapalm.csproj",
+        "projectUniqueName": "/home/silli/Projects/Coding/CustomNapalm/CustomNapalm.csproj",
         "projectName": "CustomNapalm",
-        "projectPath": "/home/sillius-goober/Projects/Coding/CustomNapalm/CustomNapalm.csproj",
-        "packagesPath": "/home/sillius-goober/.nuget/packages/",
-        "outputPath": "/home/sillius-goober/Projects/Coding/CustomNapalm/obj/",
+        "projectPath": "/home/silli/Projects/Coding/CustomNapalm/CustomNapalm.csproj",
+        "packagesPath": "/home/silli/.nuget/packages/",
+        "outputPath": "/home/silli/Projects/Coding/CustomNapalm/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/sillius-goober/.nuget/NuGet/NuGet.Config"
+          "/home/silli/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "/usr/lib64/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.bepinex.dev/v3/index.json": {},
@@ -41,8 +40,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "netstandard2.1": {
@@ -83,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/9.0.108/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/RuntimeIdentifierGraph.json"
         }
       }
     }
