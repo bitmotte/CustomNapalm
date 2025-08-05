@@ -1,5 +1,5 @@
-## sillius goober /// first
-# custom napalm
+
+# custom napalm!!!! !
 
 helo, this is my first git project, and i'm not very good at unity modding, so this probably wont go anywhere.
 
