@@ -1,6 +1,7 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using UnityEngine;
+using HarmonyLib;
 
 namespace CustomNapalm;
 
@@ -9,18 +10,30 @@ public class Plugin : BaseUnityPlugin
 {
     internal static new ManualLogSource Logger;
 
-    public static ObjectSpawns objectSpawns;
-
     private void Awake()
     {
         // Plugin startup logic
         Logger = base.Logger;
-        Logger.LogInfo($"{MyPluginInfo.PLUGIN_GUID} is loading!!!11!");
+        Logger.LogInfo($"{MyPluginInfo.PLUGIN_GUID} is loading!!!!");
 
-        //new scripts
-        objectSpawns = gameObject.AddComponent<ObjectSpawns>();
+        // new scripts
+        GameObject loader = new()
+        {
+            name = "CustomNapalmLoader"
+        };
+        loader.AddComponent<Loaders>();
 
-        //patches
+        // patches
         NapalmLauncherPatch.Patch();
+    }
+
+    private void OnDestroy()
+    {
+        Harmony.UnpatchAll();
+    }
+
+    void Update()
+    {
+        Instantiate(Loaders.I.loadedNapalm);
     }
 }

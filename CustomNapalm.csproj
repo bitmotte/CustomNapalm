@@ -33,4 +33,12 @@
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
   </ItemGroup>
+
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+  <Exec Command="rm -r /home/silli/.local/share/Steam/steamapps/common/ULTRAKILL/BepInEx/scripts/CustomNapalm/" />
+  <Exec Command="mkdir /home/silli/.local/share/Steam/steamapps/common/ULTRAKILL/BepInEx/scripts/CustomNapalm" />
+  <Exec Command="cp /home/silli/Projects/Coding/CustomNapalm/bin/Debug/netstandard2.1/CustomNapalm.dll /home/silli/.local/share/Steam/steamapps/common/ULTRAKILL/BepInEx/scripts/CustomNapalm/" />
+  <Exec Command="cp -a /home/silli/Projects/Coding/CustomNapalm/assets/ /home/silli/.local/share/Steam/steamapps/common/ULTRAKILL/BepInEx/scripts/CustomNapalm/" />
+  </Target>
 </Project>

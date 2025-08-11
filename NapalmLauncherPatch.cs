@@ -1,9 +1,10 @@
+using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 
 namespace CustomNapalm
 {
-    public class NapalmLauncherPatch
+    public class NapalmLauncherPatch : MonoBehaviour
     {
         public static void Patch()
         {
@@ -15,13 +16,9 @@ namespace CustomNapalm
         static bool ShootCustomNapalmPre(RocketLauncher __instance)
         {
             Plugin.Logger.LogInfo("napalm time :3");
-
-            var napalmProjectileField = AccessTools.Field(typeof(RocketLauncher), "napalmProjectile");
-            GameObject tempBouncy = Object.Instantiate(Plugin.objectSpawns.bouncyCube);
-            napalmProjectileField.SetValue(__instance, tempBouncy.GetComponent<Rigidbody>());
-            Object.Destroy(tempBouncy);
-            Rigidbody rb = (Rigidbody)napalmProjectileField.GetValue(__instance);
-            Plugin.objectSpawns.SetupBouncyCube(rb.gameObject);
+            //
+            //var napalmProjectileField = AccessTools.Field(typeof(RocketLauncher), "napalmProjectile");
+            //napalmProjectileField.SetValue(__instance, Loaders.Instance.LoadNapalm("Assets/bouncy.prefab"));
 
             return true;
         }
